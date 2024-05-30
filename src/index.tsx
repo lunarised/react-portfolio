@@ -8,20 +8,16 @@ import { ExperienceSection } from "./pages/experience";
 import { HomeSection } from "./pages/home";
 import { ProjectsSection } from "./pages/projects";
 import { StyledButton } from "./components/ModalButton";
+import { ViewPort } from "./components/viewPort";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <HomeSection />
-    <AboutMeSection />
-    <ExperienceSection />
-    <ProjectsSection />
-    <StyledButton backgroundColor="#00cc00" foregroundColor="#0000FF">
-      {" "}
-      Hi Grant{" "}
-    </StyledButton>
+    
+    <ViewPort />
+
   </React.StrictMode>
 );
 
