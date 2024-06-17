@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const PageCard = styled.div`
-	min-height: 50vh;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	width: 80%;

@@ -1,23 +1,40 @@
+import { Breakpoint } from "react-socks";
 import { PageCard } from "../components/pageCard";
+import styled from "styled-components";
+import { CardContent, ContentParagraph } from "../components/ContentStylings";
+
+const PageTitle = styled.h1`
+	font-size: 4em;
+	padding-bottom: 1em;
+`;
+const SubTitle = styled.h2`
+	font-size: 3em;
+	color: #000000aa;
+	padding-bottom: 1.3em;
+`;
 
 export const HomeSection = () => {
 	return (
 		<PageCard>
-			<h1>James McKenzie</h1>
+			<Breakpoint medium up>
+				<PageTitle>James McKenzie</PageTitle>
+			</Breakpoint>
 			<br />
-			<h2>SysAdmin, Programmer, Dog Person</h2>
-			<p>
-				I am a BIT graduate from Otago Polytechnic with experience in
-				operations, systems programming, machine learning, and infrastructure
-				management.
-			</p>
-			<p>
-				At the Otago Polytechnic, I was a key member in the student OP's team,
-				and had various experiences maintaining systems. Such experiences were
-				managing SSL certificates, diagnosing hardware faults, and general
-				maintenance of several systems used by the other students for their
-				projects.
-			</p>
+			<SubTitle>SysAdmin, Programmer, Dog Person</SubTitle>
+			<CardContent>
+				<ContentParagraph>
+					I am a BIT graduate from Otago Polytechnic with experience in
+					operations, systems programming, machine learning, and infrastructure
+					management.
+				</ContentParagraph>
+				<ContentParagraph>
+					At the Otago Polytechnic, I was a key member in the student OP's team,
+					and had various experiences maintaining systems. Such experiences were
+					managing SSL certificates, diagnosing hardware faults, and general
+					maintenance of several systems used by the other students for their
+					projects.
+				</ContentParagraph>
+			</CardContent>
 			<a href="https://github.com/lunarised">
 				<img
 					src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
