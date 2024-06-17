@@ -20,7 +20,6 @@ const LargeViewportDiv = styled.div`
 	display: flex;
 	flex-direction: row;
 	height: 100%;
-	column-gap: 20px;
 `;
 
 const StyledDisplayPicture = styled.img`
@@ -61,6 +60,8 @@ export const HorizontalNavBarDiv = styled.nav`
 	flex-direction: column;
 	overflow: hidden;
 	flex-direction: row;
+	top: 0px;
+	position: sticky;
 `;
 
 const TitleRow = styled.div`
@@ -112,21 +113,11 @@ const HorizontalNavBar = () => {
 			</TitleRow>
 
 			<ExpandedNavigation $isOpen={isOpen}>
-				<StyledLink id="home" className="menu-item" href="/">
-					Home
-				</StyledLink>
-				<StyledLink id="about" className="menu-item" href="/about">
-					Technical Proficiencies
-				</StyledLink>
-				<StyledLink id="contact" className="menu-item" href="/contact">
-					About Me
-				</StyledLink>
-				<StyledLink className="menu-item--small" href="">
-					Experience
-				</StyledLink>
-				<StyledLink className="menu-item--small" href="">
-					Projects
-				</StyledLink>
+				<StyledLink href="#Home">Home</StyledLink>
+				<StyledLink href="#about">Technical Proficiencies</StyledLink>
+				<StyledLink href="#AboutMe">About Me</StyledLink>
+				<StyledLink href="#Experience">Experience</StyledLink>
+				<StyledLink href="#Projects">Projects</StyledLink>
 			</ExpandedNavigation>
 		</HorizontalNavBarDiv>
 	);
@@ -136,11 +127,11 @@ const VerticalNavBar = () => {
 	return (
 		<NavBarDiv>
 			<StyledDisplayPicture src={displayPicture} alt="Hey, Its me!" />
-			<StyledLink> Home </StyledLink>
-			<StyledLink> Technical Proficiencies </StyledLink>
-			<StyledLink> About Me </StyledLink>
-			<StyledLink> Experience </StyledLink>
-			<StyledLink> Projects </StyledLink>
+			<StyledLink href="#Home"> Home </StyledLink>
+			<StyledLink href="#about"> Technical Proficiencies </StyledLink>
+			<StyledLink href="#AboutMe"> About Me </StyledLink>
+			<StyledLink href="#Experience"> Experience </StyledLink>
+			<StyledLink href="#Projects"> Projects </StyledLink>
 		</NavBarDiv>
 	);
 };
@@ -154,10 +145,6 @@ export const SmallViewPort = () => {
 				<AboutMeSection />
 				<ExperienceSection />
 				<ProjectsSection />
-				<StyledButton backgroundColor="#FF0000" foregroundColor="#0000FF">
-					{" "}
-					Hi Grant{" "}
-				</StyledButton>
 			</LargeContentWindow>
 		</SmallViewPortDiv>
 	);
@@ -174,10 +161,6 @@ export const LargeViewPort = () => {
 				<AboutMeSection />
 				<ExperienceSection />
 				<ProjectsSection />
-				<StyledButton backgroundColor="#00cc00" foregroundColor="#0000FF">
-					{" "}
-					Hi Grant{" "}
-				</StyledButton>
 			</LargeContentWindow>
 		</LargeViewportDiv>
 	);

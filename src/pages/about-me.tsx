@@ -8,7 +8,7 @@ import {
 
 export const AboutMeSection = () => {
 	return (
-		<PageCard>
+		<PageCard id="AboutMe">
 			<SectionTitle>About Me</SectionTitle>
 			<CardContent>
 				<ContentParagraph>
@@ -44,7 +44,6 @@ export const AboutMeSection = () => {
 					linguistics, and learning about different paradigms of languages.
 				</ContentParagraph>
 			</CardContent>
-			<hr />
 		</PageCard>
 	);
 };

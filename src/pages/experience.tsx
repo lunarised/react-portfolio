@@ -3,14 +3,9 @@ import {
 	CardContent,
 	ContentParagraph,
 	SectionTitle,
+	SubHeading,
 } from "../components/ContentStylings";
 import { PageCard } from "../components/pageCard";
-
-const SubHeading = styled.h3`
-	font-size: 1.5em;
-	color: #000000aa;
-	padding-bottom: 0.3em;
-`;
 
 const JobInformation = styled.div`
 	display: flex;
@@ -25,7 +20,7 @@ const JobText = styled.h4`
 
 export const ExperienceSection = () => {
 	return (
-		<PageCard>
+		<PageCard id="Experience">
 			<SectionTitle>Experience</SectionTitle>
 			<CardContent>
 				<SubHeading>AD Instruments</SubHeading>
