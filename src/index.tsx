@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -8,15 +7,24 @@ import { ExperienceSection } from "./pages/experience";
 import { HomeSection } from "./pages/home";
 import { ProjectsSection } from "./pages/projects";
 import { StyledButton } from "./components/ModalButton";
-import { ViewPort } from "./components/viewPort";
+import { LargeViewPort, SmallViewPort } from "./components/viewPort";
+import ReactDOM from "react-dom";
+import { Breakpoint, BreakpointProvider } from "react-socks";
 
-const root = ReactDOM.createRoot(
+
+ReactDOM.render(
+  <BreakpointProvider>
+    <React.StrictMode>
+      <Breakpoint medium up>
+        <LargeViewPort />
+      </Breakpoint>
+      <Breakpoint small down>
+        <SmallViewPort />
+      </Breakpoint>
+    </React.StrictMode>
+  </BreakpointProvider>,
+
   document.getElementById("root") as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <ViewPort />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

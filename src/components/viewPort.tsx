@@ -5,16 +5,25 @@ import { AboutMeSection } from "../pages/about-me";
 import { ExperienceSection } from "../pages/experience";
 import { ProjectsSection } from "../pages/projects";
 import { StyledButton } from "./ModalButton";
-const ViewPortDiv = styled.div`
+import { Breakpoint } from "react-socks";
+import { slide as Menu } from "react-burger-menu";
+import { useState } from "react";
+
+const SmallViewPortDiv = styled.div`
   display: flex;
   flex-direction: column;
   vertical-align: middle;
-
-  @media only screen and (min-width: 992px) {
-    display: flex;
-    flex-direction: row;
-  }
 `;
+
+const LargeViewportDiv = styled.div`
+  display: flex;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  column-gap: 20px;
+`;
+
 const StyledDisplayPicture = styled.img`
   display: inline-block;
   max-width: 144px;
@@ -27,31 +36,41 @@ const StyledDisplayPicture = styled.img`
   margin-bottom: 1rem;
 `;
 
-export const NavBarDiv = styled.nav`
-  background-color: red;
-  width: 100px;
-  height: 100px;
-
-  @media only screen and (min-width: 992px) {
-    display: flex;
-    text-align: center;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    background-color: #6fa587;
-    height: 100vh;
-    min-width: 17rem;
-    flex-direction: column;
-    overflow: auto;
-  }
+const DivBackground = styled.div`
+  display: flex;
+  align-items: stretch;
+  background-color: #6fa587;
+  flex: 1;
 `;
 
-export const ContentWindow = styled.div`
+export const NavBarDiv = styled.nav`
   display: flex;
-  @media only screen and (min-width: 992px) {
-    flex-direction: column;
-    overflow-y: scroll;
-  }
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  min-width: 15rem;
+  flex-direction: column;
+  overflow: hidden;
+  position: sticky;
+  top: 0px;
+`;
+
+export const HorizontalNavBarDiv = styled.nav`
+  display: flex;
+  text-align: center;
+  align-items: left;
+  justify-content: center;
+  background-color: #6fa587;
+  height: 10vh;
+  flex-direction: column;
+  overflow: hidden;
+`;
+
+export const LargeContentWindow = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const StyledLink = styled.a`
@@ -59,7 +78,30 @@ const StyledLink = styled.a`
   padding: 0.7rem 1rem;
 `;
 
-const NavBar = () => {
+const HorizontalNavBar = () => {
+  const [isOpen, setOpen] = useState(false);
+
+  return (
+    <HorizontalNavBarDiv>
+      <Menu>
+        <a id="home" className="menu-item" href="/">
+          Home
+        </a>
+        <a id="about" className="menu-item" href="/about">
+          About
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          Contact
+        </a>
+        <a className="menu-item--small" href="">
+          Settings
+        </a>
+      </Menu>
+    </HorizontalNavBarDiv>
+  );
+};
+
+const VerticalNavBar = () => {
   return (
     <NavBarDiv>
       <StyledDisplayPicture src={displayPicture} alt="Hey, Its me!" />
@@ -72,11 +114,31 @@ const NavBar = () => {
   );
 };
 
-export const ViewPort = () => {
+export const SmallViewPort = () => {
   return (
-    <ViewPortDiv>
-      <NavBar />
-      <ContentWindow>
+    <SmallViewPortDiv>
+      <HorizontalNavBar />
+      <LargeContentWindow>
+        <HomeSection />
+        <AboutMeSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <StyledButton backgroundColor="#FF0000" foregroundColor="#0000FF">
+          {" "}
+          Hi Grant{" "}
+        </StyledButton>
+      </LargeContentWindow>
+    </SmallViewPortDiv>
+  );
+};
+
+export const LargeViewPort = () => {
+  return (
+    <LargeViewportDiv>
+      <DivBackground>
+        <VerticalNavBar />
+      </DivBackground>
+      <LargeContentWindow>
         <HomeSection />
         <AboutMeSection />
         <ExperienceSection />
@@ -85,7 +147,7 @@ export const ViewPort = () => {
           {" "}
           Hi Grant{" "}
         </StyledButton>
-      </ContentWindow>
-    </ViewPortDiv>
+      </LargeContentWindow>
+    </LargeViewportDiv>
   );
 };
