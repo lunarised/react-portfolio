@@ -1,4 +1,3 @@
-import { Breakpoint, setDefaultBreakpoints } from "react-socks";
 import { PageCard } from "../components/pageCard";
 import {
 	CardContent,

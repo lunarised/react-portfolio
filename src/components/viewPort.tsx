@@ -4,9 +4,9 @@ import { HomeSection } from "../pages/home";
 import { AboutMeSection } from "../pages/about-me";
 import { ExperienceSection } from "../pages/experience";
 import { ProjectsSection } from "../pages/projects";
-import { StyledButton } from "./ModalButton";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
+import { TechnicalProficiencies } from "../pages/technical-proficiencies";
 
 const SmallViewPortDiv = styled.div`
 	display: flex;
@@ -75,7 +75,7 @@ const TitleRow = styled.div`
 `;
 
 const ExpandedNavigation = styled.div<{ $isOpen?: boolean }>`
-	height: ${(props) => (props.$isOpen ? "170px" : "0px")};
+	height: ${(props) => (props.$isOpen ? "215px" : "0px")};
 	display: flex;
 	max-height: 100%;
 	flex-direction: column;
@@ -104,7 +104,7 @@ const TitleHeader = styled.h1`
 `;
 const HorizontalNavBar = () => {
 	const [isOpen, setOpen] = useState(false);
-
+	const setOpenDelayed = () => {};
 	return (
 		<HorizontalNavBarDiv>
 			<TitleRow>
@@ -113,11 +113,24 @@ const HorizontalNavBar = () => {
 			</TitleRow>
 
 			<ExpandedNavigation $isOpen={isOpen}>
-				<StyledLink href="#Home">Home</StyledLink>
-				<StyledLink href="#about">Technical Proficiencies</StyledLink>
-				<StyledLink href="#AboutMe">About Me</StyledLink>
-				<StyledLink href="#Experience">Experience</StyledLink>
-				<StyledLink href="#Projects">Projects</StyledLink>
+				<StyledLink href="#Home" onClick={() => setOpenDelayed()}>
+					Home
+				</StyledLink>
+				<StyledLink href="#AboutMe" onClick={() => setOpenDelayed()}>
+					About Me
+				</StyledLink>
+				<StyledLink
+					href="#TechnicalProficiencies"
+					onClick={() => setOpenDelayed()}
+				>
+					Technical Proficiencies
+				</StyledLink>
+				<StyledLink href="#Experience" onClick={() => setOpenDelayed()}>
+					Experience
+				</StyledLink>
+				<StyledLink href="#Projects" onClick={() => setOpenDelayed()}>
+					Projects
+				</StyledLink>
 			</ExpandedNavigation>
 		</HorizontalNavBarDiv>
 	);
@@ -128,8 +141,11 @@ const VerticalNavBar = () => {
 		<NavBarDiv>
 			<StyledDisplayPicture src={displayPicture} alt="Hey, Its me!" />
 			<StyledLink href="#Home"> Home </StyledLink>
-			<StyledLink href="#about"> Technical Proficiencies </StyledLink>
 			<StyledLink href="#AboutMe"> About Me </StyledLink>
+			<StyledLink href="#TechnicalProficiencies">
+				{" "}
+				Technical Proficiencies{" "}
+			</StyledLink>
 			<StyledLink href="#Experience"> Experience </StyledLink>
 			<StyledLink href="#Projects"> Projects </StyledLink>
 		</NavBarDiv>
@@ -143,6 +159,7 @@ export const SmallViewPort = () => {
 			<LargeContentWindow>
 				<HomeSection />
 				<AboutMeSection />
+				<TechnicalProficiencies />
 				<ExperienceSection />
 				<ProjectsSection />
 			</LargeContentWindow>
@@ -159,6 +176,7 @@ export const LargeViewPort = () => {
 			<LargeContentWindow>
 				<HomeSection />
 				<AboutMeSection />
+				<TechnicalProficiencies />
 				<ExperienceSection />
 				<ProjectsSection />
 			</LargeContentWindow>

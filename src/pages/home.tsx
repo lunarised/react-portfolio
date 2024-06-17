@@ -3,7 +3,8 @@ import { PageCard } from "../components/pageCard";
 import styled from "styled-components";
 import { CardContent, ContentParagraph } from "../components/ContentStylings";
 import { randomInt } from "crypto";
-
+import linkedInIcon from "../assets/linkedin.png";
+import githubIcon from "../assets/github.png";
 const PageTitle = styled.h1`
 	font-size: 4em;
 	padding-bottom: 1em;
@@ -12,6 +13,7 @@ const SubTitle = styled.h2`
 	font-size: 3em;
 	color: #000000aa;
 	padding-bottom: 1.3em;
+	width: 70%;
 
 	&:target {
 		opacity: 1;
@@ -48,15 +50,15 @@ export const HomeSection = () => {
 			</CardContent>
 			<a href="https://github.com/lunarised">
 				<img
-					src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+					src={githubIcon}
 					alt="Find me on Github!"
 					height="64px"
 					width="64px"
 				/>
-			</a>
+			</a>{" "}
 			<a href="https://linkedin.com/in/lunarised">
 				<img
-					src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+					src={linkedInIcon}
 					alt="Connect with me on LinkedIn"
 					height="64px"
 					width="64px"
