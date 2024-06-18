@@ -11,13 +11,15 @@ export const CppRow = (props: SkillsProps) => {
 			setOpen={props.setOpen}
 		>
 			<ContentParagraph>
-				C++ is the language where I first started building big projects. I build
-				a roguelike game in C++ for my Programming 4 paper. While most of the
-				project was done in the .NET framework, with little native C++ being
-				written, I did write some C++ for the more difficult parts of the
-				project (such as using native vectors for the room generation algorithm,
-				which was utilizing a poisson distribution). I enjoy writing C++, and It
-				is probably one of my best languages, beside Java and Python
+				I have written C++ in a professional environment on and off in my three
+				years working at ADInstrumnets. I worked primarily with C++ that was
+				written with the Microsoft COM framework, which was both challenging and
+				rewarding.
+			</ContentParagraph>
+			<ContentParagraph>
+				One of the notable bits of C++ i have written was utilizing the windows
+				clipboard and delayed rendering to Copy and Paste multiple GBs worth of
+				data around our application while reducing downtime for the end user
 			</ContentParagraph>
 		</CollapsableRow>
 	);

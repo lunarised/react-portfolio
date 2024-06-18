@@ -11,17 +11,14 @@ export const JavaRow = (props: SkillsProps) => {
 			setOpen={props.setOpen}
 		>
 			<ContentParagraph>
-				Most of my prototype programming is done in Java, as it was the first
-				language which I learnt to a degree of proficiency. The fact that it is
-				very clean for crossplatform development is ideal for me as a Windows x
-				Linux Based Programmer.
+				Most of my education in software development was in Java, notably, the
+				very old Java 7. I used Java to learn about algorithms and data
+				structures, as well as good OO design principles
 			</ContentParagraph>
 			<ContentParagraph>
-				In Java, I have explored many problems, from implementing data
-				structures and building GUI's to creating more complex applications with
-				data-graphing, and even doing some (now understandably) silly systems
-				programming. Java is definitely one of my go-to languages for any sort
-				of software development or mock up
+				While I may look at OO with a bit more of a critical view, I still
+				program in Java from time to time, if there is something I need to mock
+				out where having an OO design makes it easier to reason with
 			</ContentParagraph>
 		</CollapsableRow>
 	);

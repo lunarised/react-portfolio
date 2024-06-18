@@ -10,10 +10,8 @@ import { JavaRow } from "./skills/java";
 import React from "react";
 import { BashRow } from "./skills/bash";
 import { CRow } from "./skills/c";
-import { CSharpRow } from "./skills/cSharp";
 import { CppRow } from "./skills/cpp";
 import { PythonRow } from "./skills/python";
-import { RubyRow } from "./skills/ruby";
 import { RustRow } from "./skills/rust";
 import { ConfigRow } from "./skills/configuration";
 import { ContainerisationRow } from "./skills/containerisation";
@@ -21,6 +19,8 @@ import { GitRow } from "./skills/git";
 import { LinuxRow } from "./skills/linux";
 import { MonitoringRow } from "./skills/monitoring";
 import { VirtualisationRow } from "./skills/virtualisation";
+import { TypescriptRow } from "./skills/typescript";
+import { ReactRow } from "./skills/react";
 
 const StyledDropdownList = styled.div`
 	padding-bottom: 1em;
@@ -31,12 +31,12 @@ const ProgrammingLanguageList = () => {
 	const reactState = { open: open, setOpen: setOpen };
 	return (
 		<StyledDropdownList>
-			<JavaRow {...reactState} />
+			<TypescriptRow {...reactState} />
 			<CppRow {...reactState} />
+			<ReactRow {...reactState} />
+			<JavaRow {...reactState} />
 			<PythonRow {...reactState} />
 			<CRow {...reactState} />
-			<CSharpRow {...reactState} />
-			<RubyRow {...reactState} />
 			<RustRow {...reactState} />
 			<BashRow {...reactState} />
 		</StyledDropdownList>
@@ -48,12 +48,12 @@ const OtherSkillsList = () => {
 	const reactState = { open: open, setOpen: setOpen };
 	return (
 		<StyledDropdownList>
-			<GitRow {...reactState} />
-			<ConfigRow {...reactState} />
-			<MonitoringRow {...reactState} />
-			<ContainerisationRow {...reactState} />
-			<VirtualisationRow {...reactState} />
 			<LinuxRow {...reactState} />
+			<GitRow {...reactState} />
+			<MonitoringRow {...reactState} />
+			<VirtualisationRow {...reactState} />
+			<ContainerisationRow {...reactState} />
+			<ConfigRow {...reactState} />
 		</StyledDropdownList>
 	);
 };

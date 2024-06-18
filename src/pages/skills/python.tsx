@@ -11,18 +11,15 @@ export const PythonRow = (props: SkillsProps) => {
 			setOpen={props.setOpen}
 		>
 			<ContentParagraph>
-				Python2 was the first programming language I tried that wasn't connected
-				to some kind of microcontroller. I didn't really enjoy python2 that much
-				until I tried out python3 and decided that it was the language I like to
-				toy with.
+				Python was the language I used most commonly in my last year of my
+				education at Otago Polytechnic, as it was used in both the Algorithms
+				class, and the AI class.
 			</ContentParagraph>
 			<ContentParagraph>
 				I have experience in many areas of python3 development, such
 				data-science and AI (using tools such as tensor flow and numpy),
-				designing and testing algoriths, OO Principles, and my favorite of all,
-				funtional programming. While python is almost never my first choice as a
-				language for a project, It's a language that I don't get tired of too
-				quickly
+				designing and testing algorithms, OO Principles, and my favorite of all,
+				funtional programming!
 			</ContentParagraph>
 		</CollapsableRow>
 	);

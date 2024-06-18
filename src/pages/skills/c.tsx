@@ -11,13 +11,15 @@ export const CRow = (props: SkillsProps) => {
 			setOpen={props.setOpen}
 		>
 			<ContentParagraph>
-				While Rust is my go to systems programming language, I got my love of
-				systems programming from using C. I have used C in many projects, from
-				CLI games of ECard, to several arduino projects (such as a digital
-				theremin, or a collision avoiding robot). I still get a kick out of
-				firing up my C environment, and re-figuring out memory management, which
-				is a thrill I dont get in any of my other programming languages of
-				choice.
+				I have limited experience developing in C but I try to pick it up from
+				time to time to increase my knowledge of lower level systems
+				programming. I have implemented Red-Black Trees, Graph Searching and
+				other Algorithms and Data Structures in C from my University programming
+				course, however a more recent C project has been to catalog a multitude
+				of searches I have come across on the internet{" "}
+				<a href="https://github.com/lunarised/Programming/tree/master/C/Sorts">
+					which you can find, and laugh at here!
+				</a>
 			</ContentParagraph>
 		</CollapsableRow>
 	);
