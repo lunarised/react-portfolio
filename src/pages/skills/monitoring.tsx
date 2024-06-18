@@ -11,15 +11,12 @@ export const MonitoringRow = (props: SkillsProps) => {
 			setOpen={props.setOpen}
 		>
 			<ContentParagraph>
-				For server monitoring, I have both used homemade tools, and effective
-				tools. I designed some software that would send diagnostics to a
-				Raspberry Pi, which would then send me a phone notification, via the
-				Browser if something had happened to any of my systems. As this was
-				several years ago, and didn't work when I expected it to, I looked into
-				other monitoring software, At this time, I was introduced to Nagios in
-				my Systems Administration class. I liked the sheer simplicity of Nagios,
-				and have been using it since. I also did some configuration management
-				as part of my Student Ops role with Nagios.
+				I monitor all my linux servers carefully using a combination of
+				prometheus and grafana. I have triggers setup to check for potential
+				downtime, as well as abnormal operation, such as systemd services
+				failing, or CPU utilisation average exceeding a value. I have a
+				notification setup using discord and webhooks to alert me when these
+				events occur
 			</ContentParagraph>
 		</CollapsableRow>
 	);
