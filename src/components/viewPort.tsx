@@ -78,7 +78,8 @@ const TitleRow = styled.div`
 `;
 
 const ExpandedNavigation = styled.div<{ $isOpen?: boolean }>`
-  height: ${(props) => (props.$isOpen ? "215px" : "0px")};
+  height: ${(props: { $isOpen?: boolean }) =>
+    props.$isOpen ? "215px" : "0px"};
   display: flex;
   max-height: 100%;
   flex-direction: column;
@@ -86,10 +87,6 @@ const ExpandedNavigation = styled.div<{ $isOpen?: boolean }>`
   text-align: left;
   transition: height 1s ease;
   transition: all 0.3s ease;
-`;
-
-const ExpandedNavigationLink = styled.a`
-  padding: 5px;
 `;
 
 export const LargeContentWindow = styled.div`
