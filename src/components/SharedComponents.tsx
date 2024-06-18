@@ -9,16 +9,10 @@ export const CollapsableRow = (props: {
 	children: React.ReactNode;
 }) => {
 	return (
-		<div
-			onClick={() => {
-				props.open === props.name
-					? props.setOpen("none")
-					: props.setOpen(props.name);
-			}}
-			style={{ paddingBottom: "4px" }}
-		>
+		<div style={{ paddingBottom: "4px" }}>
 			<ListItem
-				openAccordion={props.open}
+				open={props.open}
+				setOpen={props.setOpen}
 				title={props.name}
 				color={props.color}
 			>
@@ -43,15 +37,22 @@ const DropdownHeader = styled.div`
 `;
 
 export const ListItem = (props: {
-	openAccordion: string;
+	open: string;
+	setOpen: (open: string) => void;
 	title: string;
 	color: string;
 	children: React.ReactNode;
 }) => {
 	return (
 		<>
-			<DropdownHeader>
-				{props.openAccordion === props.title ? (
+			<DropdownHeader
+				onClick={() => {
+					props.open === props.title
+						? props.setOpen("none")
+						: props.setOpen(props.title);
+				}}
+			>
+				{props.open === props.title ? (
 					<span>&#11206;</span>
 				) : (
 					<span>&#11208;</span>
@@ -61,7 +62,7 @@ export const ListItem = (props: {
 					{props.title}
 				</SubjectTitle>
 			</DropdownHeader>
-			{props.openAccordion === props.title ? (
+			{props.open === props.title ? (
 				<CollapsableContent>{props.children}</CollapsableContent>
 			) : (
 				<></>
