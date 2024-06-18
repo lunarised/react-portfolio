@@ -3,20 +3,20 @@ import "./index.css";
 import { LargeViewPort, SmallViewPort } from "./components/viewPort";
 import ReactDOM from "react-dom";
 import { Breakpoint, BreakpointProvider } from "react-socks";
-
-ReactDOM.render(
-  <BreakpointProvider>
-    <React.StrictMode>
-      <Breakpoint medium up>
-        <LargeViewPort />
-      </Breakpoint>
-      <Breakpoint small down>
-        <SmallViewPort />
-      </Breakpoint>
-    </React.StrictMode>
-  </BreakpointProvider>,
-
-  document.getElementById("root") as HTMLElement
+import { createRoot } from "react-dom/client";
+const container = document.getElementById("root") as HTMLElement;
+const root = createRoot(container);
+root.render(
+	<BreakpointProvider>
+		<React.StrictMode>
+			<Breakpoint medium up>
+				<LargeViewPort />
+			</Breakpoint>
+			<Breakpoint small down>
+				<SmallViewPort />
+			</Breakpoint>
+		</React.StrictMode>
+	</BreakpointProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

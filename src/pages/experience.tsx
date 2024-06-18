@@ -23,7 +23,7 @@ export const ExperienceSection = () => {
 		<PageCard id="Experience">
 			<SectionTitle>Experience</SectionTitle>
 			<CardContent>
-				<SubHeading>AD Instruments</SubHeading>
+				<SubHeading>ADInstruments</SubHeading>
 				<JobInformation>
 					<JobText>
 						<i> Software Engineer </i>
