@@ -36,6 +36,18 @@ const DropdownHeader = styled.div`
   cursor: pointer;
 `;
 
+const RightArrow = styled.div<{ rotateAngle: number }>`
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1;
+  margin-top: ${(props) => (props.rotateAngle % 180 == 0 ? 2 : 0)}px;
+  clip-path: polygon(30% 0, 100% 50%, 30% 100%);
+  background-color: #000000cc;
+  align-items: center;
+  transform: rotate(${(props) => props.rotateAngle}deg);
+  transition: all 0.2s;
+`;
+
 export const ListItem = (props: {
   open: string;
   setOpen: (open: string) => void;
@@ -53,9 +65,9 @@ export const ListItem = (props: {
         }}
       >
         {props.open === props.title ? (
-          <span style={{ fontFamily: "UIFontRegular" }}>&#11206;</span>
+          <RightArrow rotateAngle={90} />
         ) : (
-          <span style={{ fontFamily: "UIFontRegular" }}>&#11208;</span>
+          <RightArrow rotateAngle={0} />
         )}
         <span style={{ color: props.color, fontFamily: "UIFontRegular" }}>
           &#9632;
