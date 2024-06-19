@@ -27,7 +27,7 @@ const randomSaying = () => {
 
 export const HomeSection = () => {
   return (
-    <PageCard style={{ paddingTop: "12%" }} id="Home">
+    <PageCard style={{ paddingTop: "100px" }} id="Home">
       <Breakpoint medium up>
         <PageTitle>James McKenzie</PageTitle>
       </Breakpoint>

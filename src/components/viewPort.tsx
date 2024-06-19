@@ -65,6 +65,7 @@ export const HorizontalNavBarDiv = styled.nav`
   width: 100vw;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 1;
 `;
 
 const TitleRow = styled.div`

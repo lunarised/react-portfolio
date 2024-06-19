@@ -4,7 +4,7 @@ export const SectionTitle = styled.h2`
   font-size: 3em;
   color: #000000aa;
   padding-bottom: 0.8em;
-  padding-top: 1.5em;
+  padding-top: 1em;
 `;
 
 export const CardContent = styled.div`
@@ -23,4 +23,3 @@ export const SubHeading = styled.h3`
 export const SubjectTitle = styled.h4`
   font-size: 1em;
 `;
-
