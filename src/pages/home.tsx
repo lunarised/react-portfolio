@@ -1,7 +1,11 @@
 import { Breakpoint } from "react-socks";
 import { PageCard } from "../components/pageCard";
 import styled from "styled-components";
-import { CardContent, ContentParagraph } from "../components/ContentStylings";
+import {
+  CardContent,
+  ContentParagraph,
+  SectionTitle,
+} from "../components/ContentStylings";
 import linkedInIcon from "../assets/linkedin.png";
 import githubIcon from "../assets/github.png";
 const PageTitle = styled.h1`
@@ -20,8 +24,8 @@ const SubTitle = styled.h2`
 `;
 
 const randomSaying = () => {
-  const randomIndex = Math.random() * 5;
-  const headings = ["Dog Person", "Cat Person", "Human Person", "Yo", "Wo"];
+	const headings = ["Dog Person", "Cat Person", "Human Person", "Musician", "Jazz Enthusiast", "Guitarist", ];
+	const randomIndex = Math.random() * headings.length;
   return headings[Math.floor(randomIndex)];
 };
 
@@ -32,7 +36,7 @@ export const HomeSection = () => {
         <PageTitle>James McKenzie</PageTitle>
       </Breakpoint>
       <br />
-      <SubTitle>Programmer, Sys Admin, {randomSaying()}</SubTitle>
+      <SectionTitle>Programmer, Sys Admin, {randomSaying()}</SectionTitle>
       <CardContent>
         <ContentParagraph>
           I am a BIT graduate from Otago Polytechnic with experience in

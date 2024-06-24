@@ -6,7 +6,7 @@ import { ExperienceSection } from "../pages/experience";
 import { ProjectsSection } from "../pages/projects";
 import { useState } from "react";
 import Hamburger from "hamburger-react";
-import { TechnicalProficiencies } from "../pages/technical-proficiencies";
+import { TechnicalExpertise } from "../pages/technical-expertise";
 
 const SmallViewPortDiv = styled.div`
   display: flex;
@@ -122,11 +122,8 @@ const HorizontalNavBar = () => {
         <StyledLink href="#AboutMe" onClick={() => setOpenDelayed()}>
           About Me
         </StyledLink>
-        <StyledLink
-          href="#TechnicalProficiencies"
-          onClick={() => setOpenDelayed()}
-        >
-          Technical Proficiencies
+        <StyledLink href="#TechnicalExpertise" onClick={() => setOpenDelayed()}>
+          Technical Expertise
         </StyledLink>
         <StyledLink href="#Experience" onClick={() => setOpenDelayed()}>
           Experience
@@ -145,10 +142,7 @@ const VerticalNavBar = () => {
       <StyledDisplayPicture src={displayPicture} alt="Hey, Its me!" />
       <StyledLink href="#Home"> Home </StyledLink>
       <StyledLink href="#AboutMe"> About Me </StyledLink>
-      <StyledLink href="#TechnicalProficiencies">
-        {" "}
-        Technical Proficiencies{" "}
-      </StyledLink>
+      <StyledLink href="#TechnicalExpertise"> Technical Expertise </StyledLink>
       <StyledLink href="#Experience"> Experience </StyledLink>
       <StyledLink href="#Projects"> Projects </StyledLink>
     </NavBarDiv>
@@ -162,7 +156,7 @@ export const SmallViewPort = () => {
       <LargeContentWindow>
         <HomeSection />
         <AboutMeSection />
-        <TechnicalProficiencies />
+        <TechnicalExpertise />
         <ExperienceSection />
         <ProjectsSection />
       </LargeContentWindow>
@@ -179,7 +173,7 @@ export const LargeViewPort = () => {
       <LargeContentWindow>
         <HomeSection />
         <AboutMeSection />
-        <TechnicalProficiencies />
+        <TechnicalExpertise />
         <ExperienceSection />
         <ProjectsSection />
       </LargeContentWindow>

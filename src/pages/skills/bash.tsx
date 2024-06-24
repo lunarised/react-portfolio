@@ -3,28 +3,21 @@ import { CollapsableRow } from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const BashRow = (props: SkillsProps) => {
-	return (
-		<CollapsableRow
-			name="Bash"
-			color="#89e051"
-			open={props.open}
-			setOpen={props.setOpen}
-		>
-			<ContentParagraph>
-				"Bash has always been a funny language for me to program in. On one
-				hand, doing batch processing in it is very straight forward as you can
-				consider it a sequence of commands, although, once you add conditionals
-				and loops, bash gets rather ugly.
-			</ContentParagraph>
-			<ContentParagraph>
-				I ended up writing a tool in bash that helps initialize jekyll pages. I
-				made this after one of my friends who blogs, asked me why he spent more
-				time writing in metadata for jekyll to process than he did writing his
-				posts. So i essentially made a barebones bash script that fills out the
-				metadata for me. I will oneday put it in a build package, but since it
-				is mainly just being used by some close friends of mine, I will keep it
-				as a simple bash script for now." ,
-			</ContentParagraph>
-		</CollapsableRow>
-	);
+  return (
+    <CollapsableRow
+      name="Bash"
+      color="#89e051"
+      open={props.open}
+      setOpen={props.setOpen}
+    >
+      <ContentParagraph>
+        My knowledge of bash is rather solid and I use bash as my prefered shell
+        on my operating systems. While the bash I write isn't technically
+        impressive, It does what I need it to do, by automating tedious tasks
+        <a href="https://github.com/lunarised/jmake">
+          such as Automating Jeckyll metadata
+        </a>
+      </ContentParagraph>
+    </CollapsableRow>
+  );
 };
