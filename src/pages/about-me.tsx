@@ -12,15 +12,15 @@ export const AboutMeSection = () => {
       <CardContent>
         <ContentParagraph>
           I first started programming upon taking a highschool robotics course,
-          where we had to design a multiplayer game utilizing a Picaxe 02m2
+          where we had to design a multiplayer game utilizing a Picaxe 08M2
           microcontroller, programmed in basic. After writing a small guitar
           hero clone, I tried my hand at making paper scissors rock, which was
-          unexplainably, much harder to do! It was solving these problems that I
-          developed an interest in programming
+          unexplainably, much harder to do! It was by solving these problems
+          that I developed an interest in programming
         </ContentParagraph>
 
         <ContentParagraph>
-          After highschool, I attended University to study computer science. I
+          After highschool, I attended university to study computer science. I
           found out that I was very interested in both programming, and in
           linux. I swapped to using Arch Linux on a thinkpad as my daily driver,
           and learnt the operating system until I could install it in 20 mins. I
@@ -28,6 +28,14 @@ export const AboutMeSection = () => {
           Raspberry Pi's and Arduinos. I ended up creating a Raspberry Pi radio
           configuration which ran off MPD. I had to abandon this project however
           due to some inconsistencies on how the Pi handles UTF characters.
+        </ContentParagraph>
+        <ContentParagraph>
+          After some time at university, I decided that there wasn't a pathway
+          for me to learn more about what interested me, so I transferred to
+          Otago Polytechnic, where I learnt a large amount of systems
+          administration skills and practical software development skills that
+          weren't available to me at the university. I joined the student ops
+          team and was the team lead in my final semester
         </ContentParagraph>
         <ContentParagraph>
           I enjoy exploring new and old programming languages and seeing the

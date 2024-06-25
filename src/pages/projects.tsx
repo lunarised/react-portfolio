@@ -1,39 +1,39 @@
 import {
-	CardContent,
-	ContentParagraph,
-	SectionTitle,
-	SubHeading,
+  CardContent,
+  ContentParagraph,
+  SectionTitle,
+  SubHeading,
 } from "../components/ContentStylings";
 import { PageCard } from "../components/pageCard";
 
 export const ProjectsSection = () => {
-	return (
-		<PageCard id="Projects">
-			<SectionTitle>Projects</SectionTitle>
-			<CardContent>
-				<ContentParagraph>
-					I have worked on several small projects, either to learn a language,
-					or just as something to do! I have a few projects currently where I am
-					a little stuck, and plenty of projects which I have finished. Some of
-					these projects are just running small servers, whereas others are
-					programming projects in different languages, or projects designed to
-					help me learn an operating system.
-				</ContentParagraph>
+  return (
+    <PageCard id="Projects">
+      <SectionTitle>Projects</SectionTitle>
+      <CardContent>
+        <ContentParagraph>
+          Below are a collection of projects I have worked on. Some are small,
+          pet hobbyist projects, and some are more serious prototypes. But
+          they're all silly little programs to me :)
+        </ContentParagraph>
 
-				<SubHeading>Radio</SubHeading>
-				<ContentParagraph>
-					A Project I am currently working on is to run a small internet radio
-					station, which is something I toyed with a year or so ago (Mid 2019).
-					I am currently refactoring the code, building a Vue js frontend and
-					redoing the backend so that the audiochannels are encrypted on their
-					way to the client. You can find the link to the github repository
-					<a href="https://github.com/lunarised/radio">here!</a>
-				</ContentParagraph>
-				<ContentParagraph>
-					You can also find a link to the old version of the radio
-					<a href="https://lunarised.com/oldRadio/">here</a>
-				</ContentParagraph>
-			</CardContent>
-		</PageCard>
-	);
+        <SubHeading>Delayed Rendering Prototype</SubHeading>
+        <ContentParagraph>
+          I built a prototype as a proof of concept to get delayed rendering
+          working with Objective C using the Foundation clipboard APIs. The
+          basic concept of delayed rendering is to copy data to the clipboard,
+          without knowing the format it will ne rendered in ahead of time. This
+          allows you to copy some data, and then render it differently depending
+          on the application that orders the paste. It also means any heavy
+          lifting needing to be done by a render function is held off on until
+          the data is actually being used, potentially preventing unneeded
+          computation for unused renders. You can find the github repository for
+          this project{" "}
+          <a href="https://github.com/lunarised/DelayedRenderingPrototype">
+            here!
+          </a>
+        </ContentParagraph>
+      </CardContent>
+    </PageCard>
+  );
 };
