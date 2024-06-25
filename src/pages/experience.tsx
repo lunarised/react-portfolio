@@ -32,9 +32,14 @@ export const ExperienceSection = () => {
         </JobInformation>
 
         <ContentParagraph>
-          My Core responsibilities in my role at ADI is to write high quality
-          Typescript, React, CSS and occasionally C++ code to help further
-          development in LabChart Lightning
+          I am currently a Software Engineer at ADInstruments. I work on a
+          project called LabChart Lightning, which is an electron app, written
+          with a TS/React/MobX frontend, and a C++/COM backend. In this role I
+          am responsible for the entire development life cycle, from meeting
+          with Product owners to learn more about customer needs, to assisting
+          customers with tech support in our product. I also help manage the
+          build-systems and write automated tests to ensure that the code we
+          ship is high quality
         </ContentParagraph>
         <div style={{ paddingBottom: "1.3em" }}></div>
 

@@ -24,8 +24,15 @@ const SubTitle = styled.h2`
 `;
 
 const randomSaying = () => {
-	const headings = ["Dog Person", "Cat Person", "Human Person", "Musician", "Jazz Enthusiast", "Guitarist", ];
-	const randomIndex = Math.random() * headings.length;
+  const headings = [
+    "Dog Person",
+    "Cat Person",
+    "Human Person",
+    "Musician",
+    "Jazz Enthusiast",
+    "Guitarist",
+  ];
+  const randomIndex = Math.random() * headings.length;
   return headings[Math.floor(randomIndex)];
 };
 
@@ -39,16 +46,14 @@ export const HomeSection = () => {
       <SectionTitle>Programmer, Sys Admin, {randomSaying()}</SectionTitle>
       <CardContent>
         <ContentParagraph>
-          I am a BIT graduate from Otago Polytechnic with experience in
-          operations, systems programming, machine learning, and infrastructure
-          management.
+          I am a Software Developer from Dunedin, New Zealand with
+          Typescript/React and C++ experience and a keen interest in software
+          development, systems programming and systems administration
         </ContentParagraph>
         <ContentParagraph>
-          At the Otago Polytechnic, I was a key member in the student OP's team,
-          and had various experiences maintaining systems. Such experiences were
-          managing SSL certificates, diagnosing hardware faults, and general
-          maintenance of several systems used by the other students for their
-          projects.
+          I graduated from Otago Polytechnic in 2020 with a Bachelor of
+          Information Technology. My main focus in my degree was in [rogramming
+          and systems administration.
         </ContentParagraph>
       </CardContent>
       <a href="https://github.com/lunarised">
