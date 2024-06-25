@@ -2,85 +2,89 @@ import styled from "styled-components";
 import { SubjectTitle } from "./ContentStylings";
 
 export const CollapsableRow = (props: {
-  open: string;
-  setOpen: (open: string) => void;
-  name: string;
-  color: string;
-  children: React.ReactNode;
+	open: string;
+	setOpen: (open: string) => void;
+	name: string;
+	color?: string;
+	children: React.ReactNode;
 }) => {
-  return (
-    <div style={{ paddingBottom: "4px" }}>
-      <ListItem
-        open={props.open}
-        setOpen={props.setOpen}
-        title={props.name}
-        color={props.color}
-      >
-        <CollapsableContent>{props.children}</CollapsableContent>
-      </ListItem>
-    </div>
-  );
+	return (
+		<div style={{ paddingBottom: "4px" }}>
+			<ListItem
+				open={props.open}
+				setOpen={props.setOpen}
+				title={props.name}
+				color={props.color}
+			>
+				<CollapsableContent>{props.children}</CollapsableContent>
+			</ListItem>
+		</div>
+	);
 };
 
 const CollapsableContent = styled.div`
-  padding: 3px;
-  margin-left: 10px;
+	padding: 3px;
+	margin-left: 10px;
 `;
 
 const DropdownHeader = styled.div`
-  display: flex;
-  column-gap: 5px;
-  padding-left: 5px;
-  color: #000000cc;
-  user-select: none;
-  cursor: pointer;
+	display: flex;
+	column-gap: 5px;
+	padding-left: 5px;
+	color: #000000cc;
+	user-select: none;
+	cursor: pointer;
 `;
 
 const RightArrow = styled.div<{ rotateAngle: number }>`
-  width: 16px;
-  height: 16px;
-  aspect-ratio: 1;
-  margin-top: ${(props) => (props.rotateAngle % 180 == 0 ? 2 : 0)}px;
-  clip-path: polygon(30% 0, 100% 50%, 30% 100%);
-  background-color: #000000cc;
-  align-items: center;
-  transform: rotate(${(props) => props.rotateAngle}deg);
-  transition: all 0.2s;
+	width: 16px;
+	height: 16px;
+	aspect-ratio: 1;
+	margin-top: ${(props) => (props.rotateAngle % 180 == 0 ? 2 : 0)}px;
+	clip-path: polygon(30% 0, 100% 50%, 30% 100%);
+	background-color: #000000cc;
+	align-items: center;
+	transform: rotate(${(props) => props.rotateAngle}deg);
+	transition: all 0.2s;
 `;
 
 export const ListItem = (props: {
-  open: string;
-  setOpen: (open: string) => void;
-  title: string;
-  color: string;
-  children: React.ReactNode;
+	open: string;
+	setOpen: (open: string) => void;
+	title: string;
+	color?: string;
+	children: React.ReactNode;
 }) => {
-  return (
-    <>
-      <DropdownHeader
-        onClick={() => {
-          props.open === props.title
-            ? props.setOpen("none")
-            : props.setOpen(props.title);
-        }}
-      >
-        {props.open === props.title ? (
-          <RightArrow rotateAngle={90} />
-        ) : (
-          <RightArrow rotateAngle={0} />
-        )}
-        <span style={{ color: props.color, fontFamily: "UIFontRegular" }}>
-          &#9632;
-        </span>
-        <SubjectTitle style={{ color: "#000000bb" }}>
-          {props.title}
-        </SubjectTitle>
-      </DropdownHeader>
-      {props.open === props.title ? (
-        <CollapsableContent>{props.children}</CollapsableContent>
-      ) : (
-        <></>
-      )}
-    </>
-  );
+	return (
+		<>
+			<DropdownHeader
+				onClick={() => {
+					props.open === props.title
+						? props.setOpen("none")
+						: props.setOpen(props.title);
+				}}
+			>
+				{props.open === props.title ? (
+					<RightArrow rotateAngle={90} />
+				) : (
+					<RightArrow rotateAngle={0} />
+				)}
+				{props.color ? (
+					<span style={{ color: props.color, fontFamily: "UIFontRegular" }}>
+						&#9632;
+					</span>
+				) : (
+					<></>
+				)}
+				<SubjectTitle style={{ color: "#000000bb" }}>
+					{props.title}
+				</SubjectTitle>
+			</DropdownHeader>
+			{props.open === props.title ? (
+				<CollapsableContent>{props.children}</CollapsableContent>
+			) : (
+				<></>
+			)}
+		</>
+	);
 };
