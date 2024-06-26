@@ -79,10 +79,10 @@ export const ExperienceSection = () => {
         </JobInformation>
 
         <ContentParagraph>
-          After one of the onsite NTT engineers took time off, I was asked to be
-          subcontracted from DTSL to assist NTT for their onsite service desk in
-          the mornings during his absence. In this role, I was able to help with
-          level 2 tickets, both diagnosing problems and finding solution to
+          After one of the on site NTT engineers took time off, I was asked to
+          be subcontracted from DTSL to assist NTT for their onsite service desk
+          in the mornings during his absence. In this role, I was able to help
+          with level 2 tickets, both diagnosing problems and finding solution to
           them. This role gave me more experience in being self managed as well
           as letting me broaden what sort of tickets I was able to do
         </ContentParagraph>
