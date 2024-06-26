@@ -17,7 +17,7 @@ export const CppRow = (props: SkillsProps) => {
         rewarding.
       </ContentParagraph>
       <ContentParagraph>
-        One of the notable bits of C++ I have written was utilizing the Windows
+        One of the notable bits of C++ I have written was utilising the Windows
         clipboard and delayed rendering to Copy and Paste multiple GBs worth of
         data around our application while reducing downtime for the end user
       </ContentParagraph>

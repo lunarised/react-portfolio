@@ -12,7 +12,7 @@ export const AboutMeSection = () => {
       <CardContent>
         <ContentParagraph>
           I first started programming upon taking a highschool robotics course,
-          where we had to design a multiplayer game utilizing a Picaxe 08M2
+          where we had to design a multiplayer game utilising a Picaxe 08M2
           microcontroller, programmed in BASIC. After writing a small guitar
           hero clone, I tried my hand at making paper scissors rock, which was
           unexplainably, much harder to do! It was by solving these problems

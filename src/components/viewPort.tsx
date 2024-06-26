@@ -119,11 +119,11 @@ const HorizontalNavBar = () => {
         <StyledLink href="#Home" onClick={() => setOpenDelayed()}>
           Home
         </StyledLink>
-        <StyledLink href="#AboutMe" onClick={() => setOpenDelayed()}>
-          About Me
-        </StyledLink>
         <StyledLink href="#TechnicalExpertise" onClick={() => setOpenDelayed()}>
           Technical Expertise
+        </StyledLink>
+        <StyledLink href="#AboutMe" onClick={() => setOpenDelayed()}>
+          About Me
         </StyledLink>
         <StyledLink href="#Experience" onClick={() => setOpenDelayed()}>
           Experience
@@ -141,9 +141,9 @@ const VerticalNavBar = () => {
     <NavBarDiv>
       <StyledDisplayPicture src={displayPicture} alt="Hey, Its me!" />
       <StyledLink href="#Home"> Home </StyledLink>
+      <StyledLink href="#Experience"> Experience </StyledLink>
       <StyledLink href="#AboutMe"> About Me </StyledLink>
       <StyledLink href="#TechnicalExpertise"> Technical Expertise </StyledLink>
-      <StyledLink href="#Experience"> Experience </StyledLink>
       <StyledLink href="#Projects"> Projects </StyledLink>
     </NavBarDiv>
   );
@@ -155,9 +155,9 @@ export const SmallViewPort = () => {
       <HorizontalNavBar />
       <LargeContentWindow>
         <HomeSection />
+        <ExperienceSection />
         <AboutMeSection />
         <TechnicalExpertise />
-        <ExperienceSection />
         <ProjectsSection />
       </LargeContentWindow>
     </SmallViewPortDiv>
@@ -172,9 +172,9 @@ export const LargeViewPort = () => {
       </DivBackground>
       <LargeContentWindow>
         <HomeSection />
+        <ExperienceSection />
         <AboutMeSection />
         <TechnicalExpertise />
-        <ExperienceSection />
         <ProjectsSection />
       </LargeContentWindow>
     </LargeViewportDiv>

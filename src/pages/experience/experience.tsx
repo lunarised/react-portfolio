@@ -46,7 +46,7 @@ export const ExperienceSection = () => {
     <PageCard id="Experience">
       <SectionTitle>Experience</SectionTitle>
       <CardContent>
-        <SubHeading>ADInstruments</SubHeading>
+        <SubHeading>AD Instruments</SubHeading>
         <JobInformation>
           <JobText>
             <i> Software Engineer </i>
@@ -55,11 +55,11 @@ export const ExperienceSection = () => {
         </JobInformation>
 
         <ContentParagraph>
-          I am currently a Software Engineer at ADInstruments. I work on a
+          I am currently a Software Engineer at AD Instruments. I work on a
           project called LabChart Lightning, which is an Electron app, written
           with a TS/React/MobX frontend, and a C++/COM backend. In this role I
           am responsible for the entire development life cycle, from meeting
-          with Product owners to learn more about customer needs, to assisting
+          with product owners to learn more about customer needs, to assisting
           customers with tech support in our product. I also help manage the
           build-systems and write automated tests to ensure that the code we
           ship is high quality.
@@ -80,11 +80,12 @@ export const ExperienceSection = () => {
 
         <ContentParagraph>
           After one of the on site NTT engineers took time off, I was asked to
-          be subcontracted from DTSL to assist NTT for their onsite service desk
-          in the mornings during his absence. In this role, I was able to help
-          with level 2 tickets, both diagnosing problems and finding solution to
-          them. This role gave me more experience in being self managed as well
-          as letting me broaden what sort of tickets I was able to do.
+          be subcontracted from DTSL to assist NTT for their on-site service
+          desk in the mornings during his absence. In this role, I was able to
+          help with level 2 tickets, both diagnosing problems and finding
+          solution to them. This role gave me more experience in being self
+          managed as well as letting me broaden what sort of tickets I was able
+          to do.
         </ContentParagraph>
         <div style={{ paddingBottom: "1.3em" }}></div>
 

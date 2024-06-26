@@ -13,7 +13,7 @@ export const VirtualisationRow = (props: SkillsProps) => {
       <ContentParagraph>
         As a member of the Student Ops group, I utilised VMWare to provide
         virtual machines to the other project groups. I have also used
-        virtualization in my own time, such as using dynamic malware analysis
+        virtualisation in my own time, such as using dynamic malware analysis
         tools such as Cuckoo, which require a very specific virtual machine
         setup
       </ContentParagraph>
