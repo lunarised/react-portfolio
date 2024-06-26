@@ -10,7 +10,7 @@ export const SchedulerRow = (props: ExperienceProps) => {
         start sampling depending on some time settings that an end user sets.
         This included weekdays, times, delay between sessions as well as support
         for multiple timezones changing mid experiment (Daylight Saving and
-        such)
+        such).
       </ContentParagraph>
       <ContentParagraph>
         This epic was specifically challenging due to how many edge cases there
@@ -18,7 +18,7 @@ export const SchedulerRow = (props: ExperienceProps) => {
         the Luxon JS library. Some other things I had to consider were all the
         edge cases for why an application may not have accurate access to a
         clock, or system states that may affect automated sampling (such as
-        Windows Update )
+        Windows Update).
       </ContentParagraph>
     </CollapsibleRow>
   );

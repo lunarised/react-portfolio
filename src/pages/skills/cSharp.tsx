@@ -11,7 +11,7 @@ export const CSharpRow = (props: SkillsProps) => {
       setOpen={props.setOpen}
     >
       <ContentParagraph>
-        My experience with C# was originally as a way to manage windows forms,
+        My experience with C# was originally as a way to manage Windows forms,
         and was taught as one of the first languages in my Bachelor of IT. While
         I enjoyed programming in C# then, It wasn't until I played around with
         making some functionally designed components for my software testing

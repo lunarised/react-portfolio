@@ -35,7 +35,7 @@ export const AboutMeSection = () => {
           Otago Polytechnic, where I learnt a large amount of systems
           administration skills and practical software development skills that
           weren't available to me at the university. I joined the student ops
-          team and was the team lead in my final semester
+          team and was the team lead in my final semester.
         </ContentParagraph>
         <ContentParagraph>
           I enjoy exploring new and old programming languages and seeing the
@@ -43,13 +43,13 @@ export const AboutMeSection = () => {
           proficient in Typescript, I often program in Rust, C and Java when
           trying to solve a problem. I have also in the past enjoyed spending
           some evenings studying other, lesser used languages such as Racket,
-          OCAML, D and most recently, Gleam
+          OCAML, D and most recently, Gleam.
         </ContentParagraph>
         <ContentParagraph>
           Outside of computers, I really enjoy writing, listening to, and
           performing a wide variety of music, from Rock, to Latin Jazz and many
           things in between. I have a youtube channel where I upload covers of
-          songs I enjoy playing
+          songs I enjoy playing.
         </ContentParagraph>
       </CardContent>
     </PageCard>

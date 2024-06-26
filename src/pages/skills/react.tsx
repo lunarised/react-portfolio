@@ -20,7 +20,7 @@ export const ReactRow = (props: SkillsProps) => {
         A notable project I undertook was to update all of our old popover
         components with Floating-UI which required a bunch of messing around
         with older styles of react and modernising them so they can be worked on
-        more easily in the future (and clean up some bugs while we are at it!)
+        more easily in the future (and clean up some bugs while I'm at it!)
       </ContentParagraph>
     </CollapsibleRow>
   );

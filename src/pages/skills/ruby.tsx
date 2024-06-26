@@ -22,7 +22,7 @@ export const RubyRow = (props: SkillsProps) => {
         The other project I have used ruby to work through, was a bot that
         connected to a fediverse instance, and made posts from a set of files
         pertaining to musicians/bands, and sentences. I still haven't finished
-        this project, but it is one i'm quite fond of
+        this project, but it is one I'm quite fond of
       </ContentParagraph>
     </CollapsibleRow>
   );
