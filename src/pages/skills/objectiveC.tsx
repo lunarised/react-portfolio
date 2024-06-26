@@ -1,10 +1,10 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsableRow } from "../../components/SharedComponents";
+import { CollapsibleRow } from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const ObjCRow = (props: SkillsProps) => {
   return (
-    <CollapsableRow
+    <CollapsibleRow
       name="Objective C"
       color="#438eff"
       open={props.open}
@@ -29,6 +29,6 @@ export const ObjCRow = (props: SkillsProps) => {
           prototype delayed rendering application here
         </a>
       </ContentParagraph>
-    </CollapsableRow>
+    </CollapsibleRow>
   );
 };

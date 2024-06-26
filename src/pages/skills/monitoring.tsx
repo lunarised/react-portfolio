@@ -1,10 +1,10 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsableRow } from "../../components/SharedComponents";
+import { CollapsibleRow } from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const MonitoringRow = (props: SkillsProps) => {
   return (
-    <CollapsableRow
+    <CollapsibleRow
       name="Monitoring"
       color="#b30000"
       open={props.open}
@@ -18,6 +18,6 @@ export const MonitoringRow = (props: SkillsProps) => {
         notification setup using discord and webhooks to alert me when these
         events occur
       </ContentParagraph>
-    </CollapsableRow>
+    </CollapsibleRow>
   );
 };

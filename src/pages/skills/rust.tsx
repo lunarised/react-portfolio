@@ -1,10 +1,10 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsableRow } from "../../components/SharedComponents";
+import { CollapsibleRow } from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const RustRow = (props: SkillsProps) => {
   return (
-    <CollapsableRow
+    <CollapsibleRow
       name="Rust"
       color="#dea584"
       open={props.open}
@@ -15,6 +15,6 @@ export const RustRow = (props: SkillsProps) => {
         some rust and write some code. It is certainly not my best language but
         I am constantly striving to improve my fluency with it
       </ContentParagraph>
-    </CollapsableRow>
+    </CollapsibleRow>
   );
 };
