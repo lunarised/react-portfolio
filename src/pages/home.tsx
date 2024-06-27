@@ -52,7 +52,7 @@ export const HomeSection = () => {
         </ContentParagraph>
         <ContentParagraph>
           I graduated from Otago Polytechnic in 2020 with a Bachelor of
-          Information Technology. My main focus in my degree was in programming
+          Information Technology. My main focus for my degree was programming
           and systems administration.
         </ContentParagraph>
       </CardContent>

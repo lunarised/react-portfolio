@@ -46,7 +46,7 @@ export const ExperienceSection = () => {
     <PageCard id="Experience">
       <SectionTitle>Experience</SectionTitle>
       <CardContent>
-        <SubHeading>AD Instruments</SubHeading>
+        <SubHeading>ADInstruments</SubHeading>
         <JobInformation>
           <JobText>
             <i> Software Engineer </i>
@@ -55,14 +55,18 @@ export const ExperienceSection = () => {
         </JobInformation>
 
         <ContentParagraph>
-          I am currently a Software Engineer at AD Instruments. I work on a
+          I am currently a Software Engineer at ADInstruments. I work on a
           project called LabChart Lightning, which is an Electron app, written
-          with a TS/React/MobX frontend, and a C++/COM backend. In this role I
-          am responsible for the entire development life cycle, from meeting
-          with product owners to learn more about customer needs, to assisting
-          customers with tech support in our product. I also help manage the
-          build-systems and write automated tests to ensure that the code we
-          ship is high quality.
+          with a TS/React/MobX frontend, and a C++/COM backend. The product
+          provides the ability to sample data from hardware, and perform
+          analysis on that data.
+        </ContentParagraph>
+        <ContentParagraph>
+          In this role I am responsible for the entire development life cycle,
+          from meeting with product owners to learn more about customer needs,
+          to assisting customers with tech support in our product. I also help
+          manage the build-systems and write automated tests to ensure that the
+          code we ship is high quality.
         </ContentParagraph>
 
         <ADIProjectsList />

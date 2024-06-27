@@ -12,9 +12,9 @@ export const ReactRow = (props: SkillsProps) => {
     >
       <ContentParagraph>
         Most of the UI in LabChart Lightning was written using React with
-        StyledComponents. One of the more frequent tasks I undertook at AD
-        Instruments was creating clean and functional React code, following the
-        guidance of an in house designer
+        StyledComponents. One of the more frequent tasks I undertook at
+        ADInstruments was creating clean and functional React code, following
+        the guidance of an in house designer
       </ContentParagraph>
       <ContentParagraph>
         A notable project I undertook was to update all of our old popover

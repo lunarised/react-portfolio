@@ -19,21 +19,21 @@ export const DelayedRenderingRow = (props: ExperienceProps) => {
       </ContentParagraph>
       <ContentParagraph>
         Coming up with a solution that worked both on Mac and Windows was one of
-        the more challenging parts of this project as a whole. The backend was
-        written with Windows in mind, so I had to spend time getting all the
-        existing rendering code to be cross platform. This also led to having to
-        pick the point where Mac specific code would branch from the Windows
-        specific code, so that each set of clipboard calls shared as much of the
-        same code as possible.
+        the more challenging parts of this project as a whole.The existing
+        backend was written for Windows, so I had to spend time getting all the
+        existing rendering code to be cross platform. This also meant having to
+        determine where the Mac specific code would branch from the Windows
+        specific code, so that each set of clipboard calls shared as much code
+        as possible.
       </ContentParagraph>
       <ContentParagraph>
-        The Windows side was also quite difficult, with conflicting information
-        in the documentation which partially suggested that delayed rendering
-        was no longer supported, and the clipboard history feature of Windows 10
-        causing automatic renders of the clipboard whenever anything was added
-        to the clipboard. Along with using a legacy renderer from an older
-        version of the application, I managed to get delayed rendering working
-        on Windows too.
+        The Windows-specific implementation was also quite difficult, with
+        conflicting information in the documentation which partially suggested
+        that delayed rendering was no longer supported, and the clipboard
+        history feature of Windows 10 causing automatic renders of the clipboard
+        whenever anything was added to the clipboard. Along with using a legacy
+        renderer from an older version of the application, I managed to get
+        delayed rendering working on Windows too.
       </ContentParagraph>
     </CollapsibleRow>
   );
