@@ -12,15 +12,15 @@ export const ReactRow = (props: SkillsProps) => {
     >
       <ContentParagraph>
         Most of the UI in LabChart Lightning was written using React with
-        StyledComponents. One of the more frequent tasks I undertook at
+        styled-components. One of the more frequent tasks I undertook at
         ADInstruments was creating clean and functional React code, following
-        the guidance of an in house designer
+        the guidance of an in house designer.
       </ContentParagraph>
       <ContentParagraph>
         A notable project I undertook was to update all of our old popover
-        components with Floating-UI which required a bunch of messing around
-        with older styles of React and modernising them so they can be worked on
-        more easily in the future (and clean up some bugs while I'm at it!)
+        components with Floating UI which required a messing around with coding
+        conventions of React and modernising them so they can be worked on more
+        easily in the future (and clean up some bugs while I'm at it!)
       </ContentParagraph>
     </CollapsibleRow>
   );

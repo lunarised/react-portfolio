@@ -14,7 +14,7 @@ export const TypescriptRow = (props: SkillsProps) => {
         I have used Typescript in a professional environment for over three
         years, helping to develop LabChart Lightning with ADInstruments. In that
         time, I have written code responsible for data integrity as well as
-        refactored existing code to be reused throughout the application
+        refactored existing code to be reused throughout the application.
       </ContentParagraph>
       <ContentParagraph>
         Outside of a professional environment, I have used Typescript on a few

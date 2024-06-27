@@ -14,7 +14,7 @@ export const LinuxRow = (props: SkillsProps) => {
         I have used Linux as my primary operating system for over 6 years, both
         for desktop and server use. I currently manage an array of Linux
         servers, hosting an suite of services for me, such as Jellyfin, Git,
-        Grafana and Web Hosting. These servers are run with multiple different
+        Grafana and web hosting. These servers are run with multiple different
         distributions, such as Ubuntu, Arch, Debian and Raspian.
       </ContentParagraph>
       <ContentParagraph>

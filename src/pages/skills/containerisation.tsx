@@ -11,8 +11,8 @@ export const ContainerisationRow = (props: SkillsProps) => {
       setOpen={props.setOpen}
     >
       <ContentParagraph>
-        Through my degree, I was responsible for maintaining several docker
-        containers as well as packaging some through using docker-compose.
+        Through my degree, I was responsible for maintaining several Docker
+        containers as well as packaging with docker-compose.
       </ContentParagraph>
     </CollapsibleRow>
   );

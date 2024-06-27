@@ -11,14 +11,14 @@ export const JavaRow = (props: SkillsProps) => {
       setOpen={props.setOpen}
     >
       <ContentParagraph>
-        Most of my education in software development was in Java, notably, the
+        Most of my education in software development used Java, notably, the
         very old Java 7. I used Java to learn about algorithms and data
-        structures, as well as good OO design principles
+        structures, as well as OO design principles
       </ContentParagraph>
       <ContentParagraph>
         While I may look at OO with a bit more of a critical view, I still
-        program in Java from time to time, if there is something I need to mock
-        out where having an OO design makes it easier to reason with
+        program in Java from time to time, if using OO patterns makes it easier
+        to reason about a problem
       </ContentParagraph>
     </CollapsibleRow>
   );

@@ -18,7 +18,7 @@ export const PythonRow = (props: SkillsProps) => {
       <ContentParagraph>
         I have experience in many areas of python3 development, such
         data-science and AI (using tools such as tensor flow and numpy),
-        designing and testing algorithms, OO Principles, and my favourite of
+        designing and testing algorithms, OO principles, and my favourite of
         all, functional programming!
       </ContentParagraph>
     </CollapsibleRow>

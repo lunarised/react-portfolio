@@ -14,7 +14,7 @@ export const ObjCRow = (props: SkillsProps) => {
         I have used Objective C as part of a Delayed Rendering project in
         LabChart Lightning. Rather than utilise the handles Electron provided,
         Objective C was used with the Foundation framework to access the system
-        clipboard
+        clipboard.
       </ContentParagraph>
       <ContentParagraph>
         A system of delayed rendering was implemented so that data on the
@@ -26,7 +26,7 @@ export const ObjCRow = (props: SkillsProps) => {
       <ContentParagraph>
         You can find the link to a{" "}
         <a href="https://github.com/lunarised/DelayedRenderingPrototype">
-          prototype delayed rendering application here
+          prototype delayed rendering application here.
         </a>
       </ContentParagraph>
     </CollapsibleRow>

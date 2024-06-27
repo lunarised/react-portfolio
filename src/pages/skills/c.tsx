@@ -11,14 +11,14 @@ export const CRow = (props: SkillsProps) => {
       setOpen={props.setOpen}
     >
       <ContentParagraph>
-        I have limited experience developing in C but I try to pick it up from
+        I have limited experience developing in C, but I try to pick it up from
         time to time to increase my knowledge of lower level systems
-        programming. I have implemented Red-Black Trees, Graph Searching and
-        other Algorithms and Data Structures in C from my University programming
-        course, however a more recent C project has been to catalog a multitude
-        of searches I have come across on the internet{" "}
+        programming. I have implemented red-black trees, graph searching and
+        other algorithms and data structures in C from my University programming
+        course, however a more recent C project has been to catalogue a
+        multitude of searches I have come across on the internet{" "}
         <a href="https://github.com/lunarised/Programming/tree/master/C/Sorts">
-          which you can find, and laugh at here!
+          which you can find and laugh at here!
         </a>
       </ContentParagraph>
     </CollapsibleRow>

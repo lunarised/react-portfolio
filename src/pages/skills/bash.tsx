@@ -11,11 +11,11 @@ export const BashRow = (props: SkillsProps) => {
       setOpen={props.setOpen}
     >
       <ContentParagraph>
-        My knowledge of bash is rather solid and I use bash as my preferred
-        shell on my operating systems. While the bash I write isn't technically
-        impressive, It does what I need it to do, by automating tedious tasks{" "}
+        I have a lot of experience with using Bash, as I use it as my preferred
+        shell on my operating systems. While the Bash I write isn't technically
+        impressive, it does what I need it to do, by automating tedious tasks{" "}
         <a href="https://github.com/lunarised/jmake">
-          such as automating Jeckyl metadata
+          such as automating Jeckyl metadata.
         </a>
       </ContentParagraph>
     </CollapsibleRow>

@@ -15,7 +15,7 @@ export const VirtualisationRow = (props: SkillsProps) => {
         virtual machines to the other project groups. I have also used
         virtualisation in my own time, such as using dynamic malware analysis
         tools such as Cuckoo, which require a very specific virtual machine
-        setup
+        setup.
       </ContentParagraph>
     </CollapsibleRow>
   );

@@ -14,7 +14,7 @@ export const ConfigRow = (props: SkillsProps) => {
         I have used configuration management tools to manage my servers, both in
         my degree and in my personal projects. My go to is Puppet, however I am
         considering swapping to Nix, or even NixOS as an operating system as I
-        improve my skill set
+        improve my skill set.
       </ContentParagraph>
     </CollapsibleRow>
   );

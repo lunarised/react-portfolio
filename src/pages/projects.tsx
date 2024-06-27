@@ -27,7 +27,7 @@ export const ProjectsSection = () => {
           on the application that orders the paste. It also means any heavy
           lifting needing to be done by a render function is held off until the
           data is actually being used, potentially preventing unneeded
-          computation for unused renders. You can find the github repository for
+          computation for unused renders. You can find the GitHub repository for
           this project{" "}
           <a href="https://github.com/lunarised/DelayedRenderingPrototype">
             here!

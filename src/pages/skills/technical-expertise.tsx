@@ -69,7 +69,7 @@ export const TechnicalExpertise = () => {
         <ContentParagraph>
           I am primary a Typescript programmer, with a background in functional
           and procedural programming, however I have some experience in OO based
-          languages too. The Programming languages / frameworks I have
+          languages too. The programming languages / frameworks I have
           experience with include, but are not limited to:
         </ContentParagraph>
 
@@ -78,7 +78,7 @@ export const TechnicalExpertise = () => {
         <SubHeading>Operations</SubHeading>
         <ContentParagraph>
           I maintain several servers for personal use, ranging from cloud
-          storage and git, to monitoring services and a Jellyfin instance. I
+          storage and Git, to monitoring services and a Jellyfin instance. I
           also studied Systems Administration extensively throughout my degree
           and have experience in many technologies and processes, such as:
         </ContentParagraph>
