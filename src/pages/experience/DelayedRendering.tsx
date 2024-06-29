@@ -1,5 +1,5 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsibleRow } from "../../components/SharedComponents";
+import { CollapsibleRow, ContentLink } from "../../components/SharedComponents";
 import { ExperienceProps } from "./experience";
 
 export const DelayedRenderingRow = (props: ExperienceProps) => {
@@ -13,9 +13,9 @@ export const DelayedRenderingRow = (props: ExperienceProps) => {
         One of the more challenging projects I worked on in my time at
         ADInstruments was adding Delayed Rendering to the application. You can
         read more about the Objective C prototype in the{" "}
-        <a href="#Projects">Projects</a> section, but there were additional
-        challenges surrounding the implementation and other parts of the
-        project.
+        <ContentLink href="#Projects">Projects</ContentLink> section, but there
+        were additional challenges surrounding the implementation and other
+        parts of the project.
       </ContentParagraph>
       <ContentParagraph>
         Coming up with a solution that worked both on Mac and Windows was one of

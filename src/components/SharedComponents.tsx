@@ -22,6 +22,19 @@ export const CollapsibleRow = (props: {
   );
 };
 
+export const ContentLink = styled.a`
+  &:link {
+    color: #6fa587;
+  }
+
+  &:active {
+    color: #dd2222;
+  }
+  &:visited {
+    color: #6fa587;
+  }
+`;
+
 const CollapsibleContent = styled.div`
   padding: 3px;
   margin-left: 10px;

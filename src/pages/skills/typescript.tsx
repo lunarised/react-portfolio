@@ -1,5 +1,8 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsibleRow as CollapsibleRow } from "../../components/SharedComponents";
+import {
+  CollapsibleRow as CollapsibleRow,
+  ContentLink,
+} from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const TypescriptRow = (props: SkillsProps) => {
@@ -19,9 +22,9 @@ export const TypescriptRow = (props: SkillsProps) => {
       <ContentParagraph>
         Outside of a professional environment, I have used Typescript on a few
         pet projects, one of which being{" "}
-        <a href="https://github.com/lunarised/react-portfolio/">
+        <ContentLink href="https://github.com/lunarised/react-portfolio/">
           the site you are currently reading this on
-        </a>
+        </ContentLink>
       </ContentParagraph>
     </CollapsibleRow>
   );

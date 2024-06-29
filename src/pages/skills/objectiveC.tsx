@@ -1,5 +1,5 @@
 import { ContentParagraph } from "../../components/ContentStylings";
-import { CollapsibleRow } from "../../components/SharedComponents";
+import { CollapsibleRow, ContentLink } from "../../components/SharedComponents";
 import { SkillsProps } from "./skills";
 
 export const ObjCRow = (props: SkillsProps) => {
@@ -25,9 +25,9 @@ export const ObjCRow = (props: SkillsProps) => {
       </ContentParagraph>
       <ContentParagraph>
         You can find the link to a{" "}
-        <a href="https://github.com/lunarised/DelayedRenderingPrototype">
+        <ContentLink href="https://github.com/lunarised/DelayedRenderingPrototype">
           prototype delayed rendering application here.
-        </a>
+        </ContentLink>
       </ContentParagraph>
     </CollapsibleRow>
   );

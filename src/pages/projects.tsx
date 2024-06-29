@@ -4,6 +4,7 @@ import {
   SectionTitle,
   SubHeading,
 } from "../components/ContentStylings";
+import { ContentLink } from "../components/SharedComponents";
 import { PageCard } from "../components/pageCard";
 
 export const ProjectsSection = () => {
@@ -29,9 +30,9 @@ export const ProjectsSection = () => {
           data is actually being used, potentially preventing unneeded
           computation for unused renders. You can find the GitHub repository for
           this project{" "}
-          <a href="https://github.com/lunarised/DelayedRenderingPrototype">
+          <ContentLink href="https://github.com/lunarised/DelayedRenderingPrototype">
             here!
-          </a>
+          </ContentLink>
         </ContentParagraph>
       </CardContent>
     </PageCard>
