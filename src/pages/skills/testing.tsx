@@ -5,8 +5,8 @@ import { SkillsProps } from "./skills";
 export const TestingRow = (props: SkillsProps) => {
   return (
     <CollapsibleRow
-      name="Agile"
-      color="#8B634B"
+      name="Software Testing"
+      color="#4368CD"
       open={props.open}
       setOpen={props.setOpen}
     >

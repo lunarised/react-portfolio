@@ -22,6 +22,9 @@ import { VirtualisationRow } from "./virtualisation";
 import { TypescriptRow } from "./typescript";
 import { ReactRow } from "./react";
 import { ObjCRow } from "./objectiveC";
+import { AgileRow } from "./agile";
+import { TestingRow } from "./testing";
+import { PMRow } from "./project-management";
 
 const StyledDropdownList = styled.div`
   padding-bottom: 1em;
@@ -46,6 +49,18 @@ const ProgrammingLanguageList = () => {
 };
 
 const OtherSkillsList = () => {
+  const [open, setOpen] = React.useState("none");
+  const reactState = { open: open, setOpen: setOpen };
+  return (
+    <StyledDropdownList>
+      <AgileRow {...reactState} />
+      <TestingRow {...reactState} />
+      <PMRow {...reactState} />
+    </StyledDropdownList>
+  );
+};
+
+const OperationsSkillsList = () => {
   const [open, setOpen] = React.useState("none");
   const reactState = { open: open, setOpen: setOpen };
   return (
@@ -81,6 +96,15 @@ export const TechnicalExpertise = () => {
           storage and Git, to monitoring services and a Jellyfin instance. I
           also studied Systems Administration extensively throughout my degree
           and have experience in many technologies and processes, such as:
+        </ContentParagraph>
+        <OperationsSkillsList />
+
+        <SubHeading> Other Engineering Skills </SubHeading>
+        <ContentParagraph>
+          I developed a wide array of skills over the course of my career
+          relating to the software development lifecycle. While these skills are
+          often not something that is of primary concern, I believe them to be
+          very valuable skills which I exercise whenever I can
         </ContentParagraph>
         <OtherSkillsList />
       </CardContent>
